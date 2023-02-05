@@ -1,0 +1,85 @@
+.hero {
+  //   this is the css image attachment
+  &--bgimg {
+    background-image: url(../../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500rem;
+  }
+
+  &__container {
+    width: 550px;
+    // border: 1px red dotted;
+    height: 400rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 60rem;
+    color: var(--light);
+    padding-top: 50rem;
+  }
+
+  h2 {
+    font-size: 30rem;
+    color: var(--light);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15rem;
+    color: var(--light);
+  }
+
+  &__btns {
+    // border: 1px blue dotted;
+    height: 70rem;
+    width: 170rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__features {
+    border-radius: 5rem;
+    border-color: var(--delta);
+    width: 150rem;
+    background: transparent;
+    font-size: 13rem;
+    color: var(--delta);
+    height: 30rem;
+  }
+
+  &__download {
+    font-size: 13rem;
+    border-radius: 5rem;
+    border-color: var(--beta);
+    background-color: var(--beta);
+    height: 30rem;
+    width: 160rem;
+  }
+
+  @include respond-to("small") {
+    &__btns {
+      // border: 1px blue dotted;
+      height: 30rem;
+      width: 330rem;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
