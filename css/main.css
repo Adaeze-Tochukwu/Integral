@@ -398,11 +398,6 @@ h1 {
   font-family: "OpenSans ExtraBold";
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--elements);
-}
-
 ::-moz-placeholder {
   color: var(--elements);
 }
@@ -500,7 +495,6 @@ h1 {
   height: 500rem;
 }
 .hero__container {
-  width: 550px;
   height: 400rem;
   margin-left: auto;
   margin-right: auto;
